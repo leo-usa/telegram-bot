@@ -63,7 +63,7 @@ bot.on("voice", async (ctx) => {
   } catch (error) {
     console.log(error);
     await ctx.reply(
-      "Whoops! There was an error while talking to OpenAI. See logs for details."
+      "我脑子短路了，稍等再问我吧"
     );
     return;
   }
@@ -82,7 +82,7 @@ bot.on("voice", async (ctx) => {
   } catch (error) {
     console.log(error);
     await ctx.reply(
-      "Whoops! There was an error while synthesizing the response via play.ht. See logs for details."
+      "对不起，我今天嗓子哑了，你就只能看文字了"
     );
   }
 });
