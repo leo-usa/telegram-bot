@@ -14,7 +14,7 @@ const params = {
   modelName: process.env.OPENAI_MODEL ?? "gpt-4",
   maxConcurrency: 4,
   maxTokens: 1000,
-  maxRetries: 5,
+  maxRetries: 10,
 };
 
 export class Model {
