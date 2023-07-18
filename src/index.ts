@@ -106,13 +106,13 @@ bot.on("message", async (ctx) => {
     console.log(error);
 
     const message = JSON.stringify(
-      (error as any)?.response?.data?.error ?? "Unable to extract error"
+      (error as any)?.response?.data?.error ?? "不清楚"
     );
 
     console.log({ message });
 
     await ctx.reply(
-      "Whoops! There was an error while talking to OpenAI. Error: " + message
+      "对不起，连不上我的大脑了，出错信息: " + message
     );
   }
 });
